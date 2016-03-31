@@ -1,0 +1,13 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(httpequiv='X-UA-Compatible', content='IE=edge')
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='//npmcdn.com/tachyons@4.0.0-beta.16/css/tachyons.min.css')
+    style .blue { color: #0074D9; } .bg-blue { background-color: #0074D9; }
+  body.sans-serif
+    != partial('_header')
+    != yield
+    != partial('_footer')
