@@ -88,7 +88,7 @@ main.w-100.pv5.pv6-ns.bt.b--black-10.bg-black-0125
           | Tachyons is meant to be edited and customized to meet the needs of your product. It's just css. It isn't precious. Don't be afraid to change: class names, media queries, breakpoints, or values.
   article#testimonals.ph3.ph5-ns.tl.tl-ns.bt.b--light-gray.pv3.pv5-ns
     h1 Testimonals
-    section(style='display:flex;flex-wrap:wrap;')
+    section(style='display: flex; flex-wrap: wrap;')
       article.dib.pv2.w-100.w-50-ns.pr3-ns
         p.f6.f5-ns.measure.lh-copy.pr1.pr0-l.i
           | After I embraced the “lots of little classes” way of styling, my anger at CSS almost completely went away and I was much more easily able to style and modify a design … you really have to try it.
@@ -137,3 +137,15 @@ main.w-100.pv5.pv6-ns.bt.b--black-10.bg-black-0125
         footer
           span.b Parsha Pourkhomami
           i  - Software Engineer
+  section#npm.ph3.ph5-ns.bg-white.pv5.pv6-ns
+    h1
+      a.link.near-black(href='#npm') NPM
+    p.f5.f3-ns.lh-copy.mt0.mb4.measure
+      | The main tachyons repo is just a group of of encapsulated css modules available on npm and github.
+      | You can grab the entire toolkit, or just a few selected modules.
+      | Mix and match them to suit your project's specific needs. Since tachyons modules are very focused on doing one thing well,
+      | most of them are extremely small (well under a kilobyte) so you
+      | can start using some or all of them without adding bloat to your css.
+    code.dib.mb4.ba.b--light-gray.f6.ph2.pv3(style='background-color: #d1ffff;')
+      npm install --save-dev tachyons-module-name
+    section(style='display: flex; flex-wrap: wrap;')
